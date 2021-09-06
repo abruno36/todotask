@@ -1,0 +1,42 @@
+.home {
+    width: 65%;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: rgb(211, 211, 211);
+}
+
+@media(max-width: 450px) {
+    .home {
+        width: 50%;
+    }
+    img {
+        width: 40%;
+    }
+}
+
+@media(max-width: 770px) {
+    .home {
+        width: 90%;
+    }
+}
+
+img {
+    justify-content: center;
+}
+
+span {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #673ab7;
+    font-weight: 500;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: #673ab7;
+    font-weight: 500;
+}
