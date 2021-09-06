@@ -17,7 +17,7 @@ export class ReadAllComponent implements OnInit {
   list: Todo[] = []
   listFinished: Todo[] = [];
   
-  displayedColumns: string[] = ["titulo", "descricao", "dataParaFinalizar"];
+  displayedColumns: string[] = ["id","titulo", "descricao", "dataParaFinalizar", "acoes"];
   dataSource = new MatTableDataSource<Todo>(this.list);
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -59,6 +59,8 @@ export class ReadAllComponent implements OnInit {
 
   finalizar(item: Todo): void {
     item.finalizado = true;
+    console.log("item finalizado");
+    console.log(item);
     this.service.update(item).subscribe(() => {
       this.service.message("Task finalizada com sucesso!");
       this.list = this.list.filter((todo) => todo.id !== item.id);

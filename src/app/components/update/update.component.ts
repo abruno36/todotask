@@ -41,15 +41,15 @@ export class UpdateComponent implements OnInit {
     this.formataData();
     this.service.update(this.todo).subscribe((resposta) => {
       this.service.message('Informações atualizadas com sucesso!');
-      this.router.navigate(['']);
+      this.router.navigate(['todotask']);
     }, error => {
       this.service.message('Falha ao atualizar To-do!');
-      this.router.navigate(['']);
+      this.router.navigate(['todotask']);
     })
   }
 
   cancel(): void {
-    this.router.navigate([''])
+    this.router.navigate(['todotask'])
   }
   
   formataData(): void {

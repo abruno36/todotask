@@ -1,5 +1,5 @@
     .content {
-        width: 55%;
+        width: 65%;
         margin: 1.1rem auto auto auto;
     }
     
@@ -78,4 +78,12 @@
         margin-right: .5rem;
         padding-right: 2rem;
         padding-left: 2rem;
+    }
+    
+    .matcell {
+        width: 15%;
+    }
+    
+    .botoes {
+        margin-left: 6px;
     }

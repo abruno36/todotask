@@ -24,7 +24,7 @@ const routes: Routes = [
     component: CreateComponent
   },
   {
-    path: 'update/:id',
+    path: 'todotask/update/:id',
     component: UpdateComponent
   }
 ];
