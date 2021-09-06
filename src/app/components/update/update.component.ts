@@ -19,7 +19,7 @@ export class UpdateComponent implements OnInit {
   }
 
   titulo = new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(50)])
-  descricao = new FormControl ('', [Validators.required,  Validators.minLength(5), Validators.maxLength(50)])
+  descricao = new FormControl ('', [Validators.required,  Validators.minLength(5), Validators.maxLength(200)])
  
   constructor(
     private router: Router, 
@@ -66,7 +66,7 @@ export class UpdateComponent implements OnInit {
 
   errorValidDescricao() {
     if(this.descricao.invalid) {
-      return "O DESCRIÇÃO deve ter entre 5 e 50 caracteres";
+      return "O DESCRIÇÃO deve ter entre 5 e 200 caracteres";
     }
     return false;
   }

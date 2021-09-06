@@ -19,7 +19,7 @@ export class CreateComponent implements OnInit {
   }
 
   titulo = new FormControl('', [Validators.required, Validators.minLength(5), Validators.maxLength(50)])
-  descricao = new FormControl ('', [Validators.required,  Validators.minLength(5), Validators.maxLength(50)])
+  descricao = new FormControl ('', [Validators.required,  Validators.minLength(5), Validators.maxLength(200)])
  
   constructor(
     private router: Router, 
