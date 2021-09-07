@@ -57,7 +57,7 @@ export class CreateComponent implements OnInit {
 
   errorValidDescricao() {
     if(this.descricao.invalid) {
-      return "O DESCRIÇÃO deve ter entre 5 e 50 caracteres";
+      return "O DESCRIÇÃO deve ter entre 5 e 200 caracteres";
     }
     return false;
   }
